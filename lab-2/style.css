@@ -1,0 +1,17 @@
+body{
+    background-color: #66bfbf;
+    /* text-align: center; */
+    align-items:center ;
+    margin-left: 200px;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    text-decoration: wavy;
+    line-height: 1.2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+.border{
+    outline-style: solid;
+  outline-color: #2a1609;
+}
