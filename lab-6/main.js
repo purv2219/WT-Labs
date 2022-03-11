@@ -1,8 +1,5 @@
-let n = prompt("Enter any random number");
-let ele  = document.getElementById("number");
-ele.textContent = n;
-let result = "";
-for(let i=1; i<=n; i++){
-    result += i + '<br>';
+let Count = 0;
+function count(){
+    Count++;
+    document.getElementById("cnt").textContent = Count;
 }
-document.getElementById("elements").innerHTML = result;
