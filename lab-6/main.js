@@ -1,5 +1,2 @@
-let Count = 0;
-function count(){
-    Count++;
-    document.getElementById("cnt").textContent = Count;
-}
+let n = Math.floor(Math.random()*10000);
+document.body.style.backgroundColor = '#' + n;
