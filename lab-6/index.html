@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Is it odd or even ?</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            border-radius: 50%;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body onload="fib_s();">
 
-    <body>
-        <script defer src="main.js"></script>
-        <h1>The number entered is <span id="evenOrodd">0</span></h1>
-    </body>
+    <div id="str">0000</div>
+
+
+    <script>
+
+function isPrime(n){
+    let flag = true;
+    for(i = 2; i <= n - 1; i++)
+    {
+        if (n % i == 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+
+function fib_s(){
+    
+    let num = prompt("please enter the number till which fibonnaci sequence you want to print");
+    
+    let a = 0;
+    let b = 1;
+    let res = '0 1 1 ';
+    
+    
+    for(let i = 1; i<=num; i++){
+       
+      
+        if(a>1){
+
+            if(isPrime(a)){
+
+                res = res + '<span>'+a+'</span> ';
+                
+            }else{
+                res = res + a + ' ';
+            }
+        }
+        t = a + b;
+        a = b;
+        b = t;
+    }
+
+    document.getElementById('str').innerHTML = res;
+
+}
+    </script>
+</body>
 </html>
-
-
