@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>P3-4</title>
+    </head>
+    <body>
+        <script>
+            //creating an object
+            var stud = {
+                fname: "Abc",
+                lname: "xyz",
+                f1: function () {
+                    console.log("hello");
+                    return 30;
+                },
+            };
+            //accessing functions with objects
+            console.log(stud.fname);
+            console.log(stud.f1());
+
+            //Date objects and methods
+
+            var today = new Date();
+            today.getFullYear();
+            today.getMonth();
+            console.log(today);
+
+            //math objects and function
+            console.log("value of PI" + Math.PI);
+            console.log("SQRT of 5 is : " + Math.sqrt(5));
+            console.log(fname);
+            var arr = [5, 54, 443, 55, 532, 235, 987];
+            let len = arr.length;
+            console.log(Number.MAX_VALUE);
+
+            //string
+            var fname = "Purv";
+            var lname = "Savalia";
+            let name = fname.concat(" " + lname);
+
+            console.log("Name : " + name);
+            console.log("Length of name string : " + name.length);
+        </script>
+    </body>
+</html>
